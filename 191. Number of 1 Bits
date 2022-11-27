@@ -1,0 +1,11 @@
+int hammingWeight(uint32_t n) {
+    int count= 0;
+    uint32_t num = 1;
+    printf("%u",n);
+   while(n)
+   {
+       if(n&num) count++;
+       n = n>>1;
+   } 
+   return count;
+}
